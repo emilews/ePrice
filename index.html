@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+        <link rel="css/style.css">
     </head>
     <body>
         <Script>
             var request = require('request')
             request('https://api.coinmarketcap.com/v2/ticker/2137/', function(error, response, body){
-                document.getElementById('data').innerHTML = body;
-            });
+                var data = JSON.parse(body)
+                document.getElementById('data').innerHTML = data.data.name
+            })
             
         </Script>
-        <p id="data"></p>
+        <h1 id="data" ></h1>
     </body>
 </html>
