@@ -5,15 +5,6 @@
         <link rel="css/style.css">
     </head>
     <body>
-        <Script>
-            var request = require('request')
-            request('https://api.coinmarketcap.com/v2/ticker/2137/', function(error, response, body){
-                var data = JSON.parse(body)
-                document.getElementById('name').innerHTML = data.data.name
-                document.getElementById('rank').innerHTML = data.data.rank
-            })
-            
-        </Script>
         <h1 id="name" class="name"></h1>
         <div class="container">
             <div class="row">
