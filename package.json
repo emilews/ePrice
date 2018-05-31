@@ -1,0 +1,17 @@
+{
+  "name": "pric",
+  "version": "0.0.1",
+  "description": "A simple app to monitorice electroneum's USD price and its other properties.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron"
+  },
+  "author": "Emilio Wong",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
