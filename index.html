@@ -3,8 +3,13 @@
     <head>
     </head>
     <body>
-        <Scrip>
+        <Script>
+            var request = require('request')
+            request('https://api.coinmarketcap.com/v2/ticker/2137/', function(error, response, body){
+                document.getElementById('data').innerHTML = body;
+            });
             
-        </Scrip>
+        </Script>
+        <p id="data"></p>
     </body>
 </html>
