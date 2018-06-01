@@ -663,7 +663,7 @@ textarea {
 }
 
 .pane-mini {
-  width: 80px;
+  width: 120px;
   flex: none;
 }
 
@@ -752,8 +752,8 @@ img {
   background-color: #dcdfe1;
 }
 .nav-group-item .icon {
-  width: 19px;
-  height: 18px;
+  width: 0px;
+  height: 08px;
   float: left;
   color: #737475;
   margin-top: -3px;

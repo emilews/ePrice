@@ -7,9 +7,8 @@
         <Script>
             var request = require('request')
             request('https://api.coinmarketcap.com/v2/ticker/2137/', function(error, response, body){
-                var data = JSON.parse(body)
-                document.getElementById('name').innerHTML = data.data.name
-                document.getElementById('rank').innerHTML = data.data.rank
+                var etn = JSON.parse(body)
+
             })
             
         </Script>
@@ -17,10 +16,16 @@
             <div class="window-content">
                 <div class="pane-group">
                     <div class="pane-mini sidebar">
-                        <p id="name" class="name"></p>
-                    </div>
+                        <nav class="nav-group">
+                            <h5 class="nav-group-title">Cryptocurrencies</h5>
+                            <a class="nav-group-item active">
+                              <p class="overpass">Electroneum</p>
+                            </a>
+                            <a class="nav-group-item "                                
+                          </nav>
+                        </div>
                     <div class="pane">
-                        <p>Holaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
