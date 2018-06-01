@@ -8,6 +8,8 @@
             var request = require('request')
             request('https://api.coinmarketcap.com/v2/ticker/2137/', function(error, response, body){
                 var etn = JSON.parse(body)
+                document.getElementById("rank").innerHTML = etn.data.rank
+                document.getElementById("c_supply").innerHTML = etn.data.circulating_supply
 
             })
             
@@ -21,11 +23,20 @@
                             <a class="nav-group-item active">
                               <p class="overpass">Electroneum</p>
                             </a>
-                            <a class="nav-group-item "                                
+                            <a class="nav-group-item">
+                                <p class="overpass">Bitcoin</p>
+                            </a>                                
                           </nav>
                         </div>
                     <div class="pane">
-                        <p></p>
+                        <div>
+                            <p class="overpass inline-data">Rank   </p>
+                            <p id="rank" class="inline-data"></p>
+                        </div>
+                        <div>
+                            <p class="overpass inline-data">Circulating supply   </p>
+                            <p id="c_supply" class="inline-data"></p>
+                        </div>
                     </div>
                 </div>
             </div>
